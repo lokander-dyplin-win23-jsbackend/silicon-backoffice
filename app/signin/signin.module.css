@@ -1,0 +1,49 @@
+.signin {
+  display: grid;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 5rem 0;
+}
+
+.content {
+  display: grid;
+  width: 100%;
+  gap: 1rem 2rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "email"
+    "password"
+    "remember"
+    "button"
+    "forgot";
+}
+
+.formEmail {
+  grid-area: email;
+  display: grid;
+}
+
+.formPassword {
+  grid-area: password;
+  display: grid;
+}
+
+.formRemember {
+  grid-area: remember;
+  padding: 1rem 0;
+}
+
+.formSubmit {
+  grid-area: button;
+}
+
+.formForgotPassword {
+  grid-area: forgot;
+  text-align: center;
+}
