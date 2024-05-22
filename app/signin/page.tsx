@@ -16,7 +16,7 @@ export default function SignIn() {
     if (signInForm.success) {
       router.push("/");
     }
-  }, [signInForm]);
+  }, [router, signInForm]);
   return (
     <section className={styles.signIn}>
       <div className={`container ${styles.container}`}>
