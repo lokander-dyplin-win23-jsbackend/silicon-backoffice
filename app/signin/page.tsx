@@ -55,7 +55,7 @@ export default function SignIn() {
               className={`btn btn-theme-s ${styles.formSubmit}`}
               type="submit"
             >
-              Sign up
+              Sign in
             </button>
             <Link href="/" className={styles.formForgotPassword}>
               Forgot your password?
