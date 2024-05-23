@@ -1,0 +1,49 @@
+.header {
+    padding: 15px 0;
+}
+.container {
+    padding: 15px 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:  "logo menu buttons";
+    gap: 40px;
+}
+
+.container #logo {
+    grid-area: logo;
+}
+
+.container #menu {
+    grid-area: menu;
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .container #menu {
+        display: block;
+    }
+}
+
+.container #menu .nav {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.container #menu .nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-gray-800);
+    padding: 0;
+}
+.container #menu .nav a:hover {
+    color: var(--color-theme);
+}
+
+.container .accountButtons {
+    grid-area: buttons;
+    display: flex;
+    gap: 15px;
+}
